@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corrida Espacial: Ciência e Propaganda na Guerra Fria</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Force scroll suave via CSS */
+        html {
+            scroll-behavior: smooth !important;
+        }
+        
+        /* Override qualquer configuração que possa estar bloqueando */
+        * {
+            scroll-behavior: smooth !important;
+        }
+        
+        /* Para navegadores que respeitam prefers-reduced-motion */
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: smooth !important;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- CAPA ATRATIVA -->
@@ -62,7 +80,7 @@
     </section>
 
     <!-- SEÇÃO DE VÍDEO -->
-    <section class="secao-video">
+    <section class="secao-video" id="video-section">
         <div class="container-video">
             <div class="video-header">
                 <h2 class="video-titulo">Assista ao Vídeo</h2>
@@ -72,7 +90,7 @@
             </div>
             
             <div class="video-placeholder" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 16px; box-shadow: 0 0 20px rgba(0,0,0,0.4);">
-                <iframe 
+                <iframe
                     src="https://www.youtube.com/embed/F7wtsc-oeNs"
                     title="Documentário sobre a Corrida Espacial"
                     frameborder="0"
@@ -81,7 +99,6 @@
                     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
                 </iframe>
             </div>
-            
             
             <div class="video-info">
                 <div class="info-item">
@@ -105,7 +122,7 @@
     </section>
 
     <!-- LINHA DO TEMPO -->
-    <main class="container-linha-tempo">
+    <main class="container-linha-tempo" id="timeline-section">
         <div class="timeline-header">
             <h2 class="timeline-titulo">Linha do Tempo Interativa</h2>
             <p class="timeline-descricao">
@@ -121,7 +138,7 @@
                     <span class="bandeira-pais urss">URSS</span>
                     <div class="data-evento">4 de Outubro, 1957</div>
                     <h3 class="titulo-evento">Sputnik 1 - Primeiro Satélite Artificial</h3>
-                    <img src="Sputnik.jpg" alt="Sputnik 1" class="imagem-evento">
+                    <img src="imagens/Sputnik.jpg" alt="Sputnik 1" class="imagem-evento">
                     <p class="descricao-evento">A União Soviética lança o primeiro satélite artificial da história, marcando o início da Era Espacial e surpreendendo o mundo.</p>
                     <button class="botao-expandir">Ver mais detalhes</button>
                     <div class="detalhes-expandidos">
@@ -136,7 +153,7 @@
                     <span class="bandeira-pais urss">URSS</span>
                     <div class="data-evento">3 de Novembro, 1957</div>
                     <h3 class="titulo-evento">Sputnik 2 - Laika, a Primeira Vida no Espaço</h3>
-                    <img src="laika.jpg" alt="Laika no Sputnik 2" class="imagem-evento">
+                    <img src="imagens/laika.jpg" alt="Laika no Sputnik 2" class="imagem-evento">
                     <p class="descricao-evento">A cadela Laika se torna o primeiro ser vivo a orbitar a Terra, provando que organismos vivos podem sobreviver no espaço.</p>
                     <button class="botao-expandir">Ver mais detalhes</button>
                     <div class="detalhes-expandidos">
@@ -151,7 +168,7 @@
                     <span class="bandeira-pais eua">EUA</span>
                     <div class="data-evento">31 de Janeiro, 1958</div>
                     <h3 class="titulo-evento">Explorer 1 - Primeira Resposta Americana</h3>
-                    <img src="explorer1.webp" alt="Explorer 1" class="imagem-evento">
+                    <img src="imagens/explorer1.webp" alt="Explorer 1" class="imagem-evento">
                     <p class="descricao-evento">Os Estados Unidos lançam seu primeiro satélite, descobrindo os cinturões de radiação de Van Allen ao redor da Terra.</p>
                     <button class="botao-expandir">Ver mais detalhes</button>
                     <div class="detalhes-expandidos">
@@ -166,7 +183,7 @@
                     <span class="bandeira-pais urss">URSS</span>
                     <div class="data-evento">12 de Abril, 1961</div>
                     <h3 class="titulo-evento">Yuri Gagarin - Primeiro Homem no Espaço</h3>
-                    <img src="yuri_gagarin.webp" alt="Yuri Gagarin" class="imagem-evento">
+                    <img src="imagens/yuri_gagarin.webp" alt="Yuri Gagarin" class="imagem-evento">
                     <p class="descricao-evento">Yuri Gagarin completa uma órbita completa ao redor da Terra na nave Vostok 1, tornando-se o primeiro ser humano no espaço.</p>
                     <button class="botao-expandir">Ver mais detalhes</button>
                     <div class="detalhes-expandidos">
@@ -181,7 +198,7 @@
                     <span class="bandeira-pais eua">EUA</span>
                     <div class="data-evento">5 de Maio, 1961</div>
                     <h3 class="titulo-evento">Alan Shepard - Primeiro Americano no Espaço</h3>
-                    <img src="alan shepard.webp" alt="Alan Shepard" class="imagem-evento">
+                    <img src="imagens/alan shepard.webp" alt="Alan Shepard" class="imagem-evento">
                     <p class="descricao-evento">Alan Shepard realiza um voo suborbital de 15 minutos, tornando-se o primeiro americano no espaço.</p>
                     <button class="botao-expandir">Ver mais detalhes</button>
                     <div class="detalhes-expandidos">
@@ -196,7 +213,7 @@
                     <span class="bandeira-pais urss">URSS</span>
                     <div class="data-evento">16 de Junho, 1963</div>
                     <h3 class="titulo-evento">Valentina Tereshkova - Primeira Mulher no Espaço</h3>
-                    <img src="valentina tereshkova.jfif" alt="Valentina Tereshkova" class="imagem-evento">
+                    <img src="imagens/valentina.webp" alt="Valentina Tereshkova" class="imagem-evento">
                     <p class="descricao-evento">Valentina Tereshkova se torna a primeira mulher a viajar para o espaço, completando 48 órbitas em 71 horas.</p>
                     <button class="botao-expandir">Ver mais detalhes</button>
                     <div class="detalhes-expandidos">
@@ -211,7 +228,7 @@
                     <span class="bandeira-pais urss">URSS</span>
                     <div class="data-evento">18 de Março, 1965</div>
                     <h3 class="titulo-evento">Alexei Leonov - Primeira Caminhada Espacial</h3>
-                    <img src="alexei leonov.webp" alt="Alexei Leonov caminhada espacial" class="imagem-evento">
+                    <img src="imagens/alexei leonov.webp" alt="Alexei Leonov caminhada espacial" class="imagem-evento">
                     <p class="descricao-evento">Alexei Leonov realiza a primeira atividade extraveicular da história, permanecendo fora da nave por 12 minutos.</p>
                     <button class="botao-expandir">Ver mais detalhes</button>
                     <div class="detalhes-expandidos">
@@ -226,7 +243,7 @@
                     <span class="bandeira-pais eua">EUA</span>
                     <div class="data-evento">21 de Dezembro, 1968</div>
                     <h3 class="titulo-evento">Apollo 8 - Primeira Órbita Lunar Tripulada</h3>
-                    <img src="apollo8.jpg" alt="Apollo 8 Terra vista da Lua" class="imagem-evento">
+                    <img src="imagens/apollo8.jpg" alt="Apollo 8 Terra vista da Lua" class="imagem-evento">
                     <p class="descricao-evento">A Apollo 8 se torna a primeira missão tripulada a deixar a órbita terrestre e orbitar a Lua, capturando a icônica foto "Earthrise".</p>
                     <button class="botao-expandir">Ver mais detalhes</button>
                     <div class="detalhes-expandidos">
@@ -241,7 +258,7 @@
                     <span class="bandeira-pais eua">EUA</span>
                     <div class="data-evento">20 de Julho, 1969</div>
                     <h3 class="titulo-evento">Apollo 11 - Primeiro Homem na Lua</h3>
-                    <img src="apollo11.jpg" alt="Neil Armstrong na Lua" class="imagem-evento">
+                    <img src="imagens/apollo11.jpg" alt="Neil Armstrong na Lua" class="imagem-evento">
                     <p class="descricao-evento">Neil Armstrong e Buzz Aldrin se tornam os primeiros humanos a pisar na Lua, cumprindo a promessa de Kennedy.</p>
                     <button class="botao-expandir">Ver mais detalhes</button>
                     <div class="detalhes-expandidos">
@@ -256,7 +273,7 @@
                     <span class="bandeira-pais urss">URSS</span>
                     <div class="data-evento">19 de Abril, 1971</div>
                     <h3 class="titulo-evento">Salyut 1 - Primeira Estação Espacial</h3>
-                    <img src="salyut1.jpg" alt="Estação Salyut 1" class="imagem-evento">
+                    <img src="imagens/salyut1.jpg" alt="Estação Salyut 1" class="imagem-evento">
                     <p class="descricao-evento">A URSS lança a primeira estação espacial da história, iniciando a era da presença humana permanente no espaço.</p>
                     <button class="botao-expandir">Ver mais detalhes</button>
                     <div class="detalhes-expandidos">
@@ -271,7 +288,7 @@
                     <span class="bandeira-pais cooperacao">EUA & URSS</span>
                     <div class="data-evento">17 de Julho, 1975</div>
                     <h3 class="titulo-evento">Projeto Apollo-Soyuz - Fim da Corrida Espacial</h3>
-                    <img src="final.jpg" alt="Encontro Apollo-Soyuz" class="imagem-evento">
+                    <img src="imagens/final.jpg" alt="Encontro Apollo-Soyuz" class="imagem-evento">
                     <p class="descricao-evento">Astronautas americanos e cosmonautas soviéticos se encontram no espaço, simbolizando o fim da corrida espacial e o início da cooperação.</p>
                     <button class="botao-expandir">Ver mais detalhes</button>
                     <div class="detalhes-expandidos">
@@ -279,7 +296,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </main>
 
@@ -287,74 +303,6 @@
         <p class="texto-rodape">Desenvolvido por: Matheus Habeck, Gustavo Minatto</p>
     </footer>
 
-    <script>
-        function scrollToVideo() {
-            document.querySelector('.secao-video').scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
-
-        function scrollToTimeline() {
-            document.querySelector('.container-linha-tempo').scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
-
-        function expandirEvento(elemento) {
-            elemento.classList.toggle('expandido');
-            const botao = elemento.querySelector('.botao-expandir');
-            if (elemento.classList.contains('expandido')) {
-                botao.textContent = 'Ver menos detalhes';
-            } else {
-                botao.textContent = 'Ver mais detalhes';
-            }
-        }
-
-        // Animação de entrada dos eventos
-        const observador = new IntersectionObserver((entradas) => {
-            entradas.forEach(entrada => {
-                if (entrada.isIntersecting) {
-                    entrada.target.style.animationPlayState = 'running';
-                }
-            });
-        });
-
-        document.querySelectorAll('.evento-linha-tempo').forEach(evento => {
-            observador.observe(evento);
-        });
-
-        // Animações da capa
-        document.addEventListener('DOMContentLoaded', function() {
-            // Animação das estrelas
-            createStars();
-            
-            // Animação dos elementos flutuantes
-            animateFloatingElements();
-        });
-
-        function createStars() {
-            const starsContainer = document.querySelector('.estrelas');
-            for (let i = 0; i < 100; i++) {
-                const star = document.createElement('div');
-                star.className = 'estrela';
-                star.style.left = Math.random() * 100 + '%';
-                star.style.top = Math.random() * 100 + '%';
-                star.style.animationDelay = Math.random() * 3 + 's';
-                starsContainer.appendChild(star);
-            }
-        }
-
-        function animateFloatingElements() {
-            const astronauta = document.querySelector('.astronauta-flutuando');
-            const satelite = document.querySelector('.satelite-orbita');
-            const foguete = document.querySelector('.foguete-lancamento');
-            
-            setInterval(() => {
-                astronauta.style.transform = `translateY(${Math.sin(Date.now() * 0.001) * 20}px)`;
-                satelite.style.transform = `rotate(${Date.now() * 0.05}deg) translateX(50px)`;
-                foguete.style.transform = `translateY(${Math.cos(Date.now() * 0.002) * 15}px)`;
-            }, 50);
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
