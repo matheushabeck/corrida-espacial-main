@@ -29,7 +29,3 @@ A Corrida Espacial foi um dos capítulos mais emblemáticos da Guerra Fria, marc
 Desenvolvido por **Matheus Habeck** e **Gustavo Minatto**  
 Professor: **Argemiro**  
 Escola: **Escola SESI Senai**
-
-## 📖 Licença
-
-Este projeto é apenas para fins educacionais e não possui fins comerciais.
