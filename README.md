@@ -2,6 +2,8 @@
 
 Projeto desenvolvido para a disciplina de História. O objetivo é apresentar os principais eventos da **Corrida Espacial** em formato de **linha do tempo interativa**, utilizando **HTML**, **CSS** e **JavaScript**.
 
+## 🔗 Acesse o projeto online: corrida-espacial-main.vercel.app
+
 ## 🛰️ Sobre o Projeto
 
 A Corrida Espacial foi um dos capítulos mais emblemáticos da Guerra Fria, marcando a disputa tecnológica entre Estados Unidos e União Soviética. Este site tem como finalidade apresentar os principais marcos históricos desse período de forma visual e interativa, facilitando o aprendizado.
