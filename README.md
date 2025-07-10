@@ -22,9 +22,7 @@ A Corrida Espacial foi um dos capítulos mais emblemáticos da Guerra Fria, marc
 
 ## 📷 Preview
 
-![Preview do site](imagens/preview.png)
-
-> 💡 A imagem acima deve ser salva como `preview.png` dentro da pasta `imagens/`
+![Preview do site](preview.png)
 
 ## 👨‍🏫 Créditos
 
